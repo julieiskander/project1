@@ -1,0 +1,292 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+
+body {background-color: #FFFFFF;
+      margin: 0em;
+      margin-top: 0em;}
+
+body, tr, td, p, ul, ol, li, pre {font-family: Arial, Helvetica, sans-serif;
+                                         font-style: normal;
+                                         font-weight: normal;
+                                         font-size: 8pt;
+                                         color: #000000;}
+
+li {list-style-type: square}
+
+/* ------------------------ LINKS -------------------------------------------------- */
+
+A:link {color: #3B3B6E; text-decoration: underline;}
+A:visited {color: #3B3B6E; text-decoration: underline;}
+A:active {color: #3B3B6E; text-decoration: underline;}
+A:hover {color: #3B3B6E; text-decoration: underline;}
+
+BODY {color : #515665;background-color : White;margin: 0em;margin-top: 0em;}
+DIV {font-family:Verdana, Helvetica, sans-serif;}
+ /*  Controls width of the content  inside the outer table */
+TABLE#pageHeaderTbl {width:98%;}
+#pageHeaderTbl TD  {color:#515665; font-family:Verdana, Helvetica, sans-serif;}
+#pageHeaderTbl TD.inStock {color: #339933; font-family:Verdana, Helvetica, sans-serif;font-size:10px;}
+#pageHeaderTbl TD.small {font-size:10px;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;}
+#pageHeaderTbl TD.Header { font-family : Verdana,  Arial, Helvetica; font-size : 15px; color : #515665; font-weight : bold;}
+#pageHeaderTbl DIV.small{font-size:10px;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;}
+#pageHeaderTbl LI {font-size:11px;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;line-height:18px;}
+#pageHeaderTbl td.strongtextW{font-weight:bold;font-size:12px;color:#ffffff;}
+#pageHeaderTbl td.price{font-size: 11px;font-family:verdana,arial;color:#990000;padding-right:2px;text-align: right;}
+A.small:link { font-family : Verdana,  Arial, Helvetica; font-size : 10px;color:#990000;text-decoration:none;}
+A.small:visited { font-family : Verdana,  Arial, Helvetica; font-size : 10px; text-decoration : none; color: #990000;}
+A.small:hover{ font-family : Verdana,  Arial, Helvetica; font-size : 10px; text-decoration : none; color: #FF9933;}
+a.altLink:link {font-size:10px;font-family:verdana,arial;color:#3E55AB;text-decoration : none;}
+a.altLink:visited { font-size:10px;font-family:verdana,arial;color:#3E55AB;text-decoration : none;}
+a.altLink:hover{ font-family : Verdana,  Arial, Helvetica; font-size : 10px; text-decoration : none; color: #FF9933;}
+
+TH { font-family : Verdana,  Arial, Helvetica; font-size : 10pt; color : #FFFFFF; }
+
+DIV { font-size : 10pt; color : #515665;}
+DIV.thinFont { font-family : Verdana,  Arial, Helvetica; font-size : 10px; color : #515665;}
+
+A.nav { font-family : Verdana,  Arial, Helvetica; font-size : 10px; text-decoration : none; color: #FFFFFF;font-weight:bold;}
+TD.thinFont { font-family : Verdana,  Arial, Helvetica; font-size : 10px; text-decoration : none; color: #515665;}
+
+A:HOVER.nav {font-family : Verdana, Arial, Helvetica;font-size : 10px;text-decoration : none;color: #6699CC;}
+A:HOVER.navBlackB { font-family : Verdana,  Arial, Helvetica; font-size : 10px; text-decoration : underline; color: #B40E2A;}
+A:HOVER.navBlack { font-family : Verdana,  Arial, Helvetica; font-size : 10px; text-decoration : underline; color: #B40E2A;}
+A:HOVER.navW { font-family : Verdana,  Arial, Helvetica; font-size : 10px; text-decoration : underline; color: #FFFFFF;}
+
+I { font-family : Verdana,  Arial, Helvetica; font-size : 10pt; color : #515665; font-style : italic;}
+P { font-family : Verdana,  Arial, Helvetica; font-size : 10pt; color : #515665;}
+LI { font-family : Verdana,  Arial, Helvetica; font-size : 10pt; color : #515665;}
+
+.columnLabel{font-family : Verdana,  Arial, Helvetica; font-size : 11px;font-weight:bold; color : #ffffff;}
+.textarea {font-size:11px; border-width:1;font-family:verdana,arial; border-style:solid;border-color:#336699;}
+.strongtext{font-weight:bold;font-size:12px;font-family:Verdana, Helvetica, sans-serif;}
+
+.medGray{background-color:#BABABA;}
+.dataTbl{background-color:#D9D9D9;font-family : Verdana,  Arial, Helvetica; font-size : 10px; text-decoration : none; color: #999999;}
+.pageHeader{background-color:#EBECED;}
+.supPageHeader{background-color:#ACACAC;}
+.medText {font-size:11px;}
+
+.blueGradient {
+	color:#ffffff;
+	background-image:url(https://www.em.avnet.com/img_shared/sta/df2df2usa/blue_gradient.gif);
+	background-position:top;
+	background-repeat:repeat;
+	border-bottom:#ffffff 1px solid;
+}
+
+.blueGradientPrice {
+	background:#006fc8;
+	color:#ffffff;
+	background-image:url(https://www.em.avnet.com/img_shared/sta/df2df2usa/blue_gradient.gif);
+	background-position:left bottom;
+	background-repeat:repeat-x;
+}
+
+
+</style></head>
+<body bgcolor="#ffffff">
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+	var bRightBrowser = false;
+
+	function checkBrowser() {
+
+		if ( navigator.appName == "Microsoft Internet Explorer") {
+
+			var locOfMSIE = navigator.appVersion.indexOf('MSIE') + 5;
+			var bInstalled = false;
+
+			if (locOfMSIE > -1 && navigator.appVersion.substring(locOfMSIE, locOfMSIE + 1) > 4) {
+				bInstalled = oClientCaps.isComponentInstalled("{89820200-ECBD-11CF-8B85-00AA005B4383}", "ComponentID");
+			}
+
+			if (bInstalled) {
+				IEversion = oClientCaps.getComponentVersion("{89820200-ECBD-11CF-8B85-00AA005B4383}", "ComponentID");
+				version = IEversion.substr(0,3);
+				versionNumber = parseInt(IEversion.substr(0,1));
+				revisionNumber = parseInt(IEversion.substr(2,1));
+				if ( (version == "5,5") || (versionNumber > 5) || (versionNumber == 5 && revisionNumber > 5) ) {
+					bRightBrowser = true
+					return true;
+				}
+			}
+		}
+		return false;
+
+	}
+//-->
+</SCRIPT>
+
+<!--content start-->
+	<br>
+<table width="80%" border="0" cellspacing="0" cellpadding="8" align="center" style="background:#FFFFFF;border:1px solid #CCCCCC;" id="pageHeaderTbl">
+  <TR><td><table><tr>
+    <TD ROWSPAN=2 width="0" height="0"><a href="http://www.em.avnet.com" target="_top"><IMG SRC="http://www.em.avnet.com/en-us/PublishingImages/mail_images/em_americas_header_01.gif" WIDTH=163 HEIGHT=83 border="0"></a></td>
+ 	<td><IMG SRC="http://www.em.avnet.com/en-us/PublishingImages/mail_images/em_americas_header_02.gif" WIDTH=446 HEIGHT=59 ALT=""></TD>
+    <TD background="http://www.em.avnet.com/en-us/PublishingImages/mail_images/em_americas_header_03.gif" width="171" height="0">&nbsp;</TD>
+  </tr></table></td></TR>
+<tr>
+    <td>
+    Thank you for placing your web order with <strong>Avnet Electronics Marketing.</strong><br>
+	<!--VK added for Xilinx start-->
+	    <!--VK added for Xilinx end-->
+
+  <!--Steve LI added for Emedded Software Store  start-->
+	  <!--Steve Li added for Emedded Software Store  end-->
+
+	You will receive an updated shipment notification for each shipment detailing applicable charges with a Waybill Number and tracking link.
+
+<!--add by Steve LI start-->
+<!--add by Steve LI end-->
+		<br>
+		<br>
+
+		<table border="0" cellspacing="0" cellpadding="1" class="medGray">
+		<tr>
+			<td>
+		        <table border="0" cellspacing="0" cellpadding="8" style="background:#F5F5F5;">
+		        <tr>
+		        	<td>
+						<table cellspacing=2 cellpadding=0 border=0>
+						<tr>
+							<td style="white-space:nowrap;" align=right>
+								<b>Web Order Number:</b></td>
+							<td>&nbsp;&nbsp;</td>
+		                    <td class="price">
+								<strong>5018106</strong></td>
+						</tr>
+		                <tr>
+							<td style="white-space:nowrap;" align=right><B>PO or Reference Number:</B></td>
+							<td>&nbsp;&nbsp;</td>
+							<td align=right style="white-space:nowrap;">WEB5018106</td>
+						</tr>
+		                <tr>
+							<td style="white-space:nowrap;" align=right><B>Payment Method:</B></td>
+							<td>&nbsp;&nbsp;</td>
+							<td align=right style="white-space:nowrap;">Credit Card&nbsp;3219</td>
+						</tr>
+						<tr>
+							<td style="white-space:nowrap;" align=right><B>Ship Method:</B></td>
+							<td>&nbsp;&nbsp;</td>
+							<td align=right>FedEx</td>
+						</tr>
+		               	</table>
+		           	</td>
+		       	</tr>
+		       	</table>
+		 	</td>
+
+		</tr>
+		</table>
+       	<BR>
+<!--//*************************************************************-->
+<!--//*************************************************************-->
+		<table border="0" cellspacing="1" cellpadding="2" class="dataTbl" style="width:100%;">
+		<tr>
+        	<th class="supPageHeader columnLabel">
+				&nbsp;&nbsp;Billing Address</th>
+			<th class="supPageHeader columnLabel">
+				&nbsp;&nbsp;Shipping Address</th>
+		</tr>
+		<tr>
+			<td style="line-height:150%;padding-left:12px;background:#FFFFFF;">
+				Information Technology Institute<br>								9 Amina Shoukry street, sidigaber<br>
+				alexandria<br>				Alexandria&nbsp;,&nbsp;0000<br>
+				EG<br>
+			</td>
+			<td style="line-height:150%;padding-left:12px;background:#FFFFFF;">
+				Julie Iskander<br>								Suez Canal University, New <br>
+				Campus,Confucius Building<br>				ISmailia&nbsp;,&nbsp;41522<br>
+				EG<br>
+			</td>
+		</tr>
+		</table>
+		<br>
+
+		<table width="100%" border="0" cellspacing="1" cellpadding="2" class="dataTbl">
+						<tr>
+			<th class="supPageHeader columnLabel">#</th>
+			<th class="supPageHeader columnLabel">QTY</th>
+			<th class="supPageHeader columnLabel">Part Number</th>
+			<th class="supPageHeader columnLabel">Description</th>
+			<th class="supPageHeader columnLabel">RoHS<br>Status</th>
+			<th class="supPageHeader columnLabel">Status</th>
+			<th class="supPageHeader columnLabel">Unit Price</th>
+			<th class="supPageHeader columnLabel">USD$</th>
+			</tr>
+						
+			<TR bgcolor="#ffffff">
+				<td valign="top" class="small" align="center">1</td>
+				<td valign="top" class="small" align="right">2</TD>
+								<TD valign="top" class="small">
+				<table>
+				<tr><td>Supplier P/N:&nbsp;</td><td>HW-SPAR3AN-SK-UNI-G</td></tr>								   				   								</table>
+				</TD>
+				<td valign="top" class="small">
+								<b>Xilinx</b>
+				<br>Development Solution Kits<br>
+								 				<br>ECCN: 3A992 | Schedule B: 9030.82.0000 | Harmonized Tariff System: 9030.82.0000				</td>
+				<td valign="top" class="small">
+				Lead Free: Yes<br>				RoHS: Yes<br>				Green: 				</td>
+				<td valign="top" class="small">
+                              				NCNR																								<br>				<!--VK updated for Xilinx start-->
+							    <!--Nick Li added for qc#2205 For Supplier Stock Parts Backorder message on Order Confirmation Email must be triggerd of SupplierQOH instead of AvnetQAS start-->
+                                                            <!--Nick Li QC#2206 end-->
+												<!--VK updated for Xilinx end-->
+				</TD>
+				
+				      <TD valign="top" align="right" class="small">$199.0000</TD>
+								<TD valign="top" align="right" class="small">$398.00</TD>
+			</TR>
+								<tr>
+							<td colspan=7 align="right">
+						<table>
+								<tr>
+					<td valign="top" align="right">Total USD$:</td>
+				</tr>
+
+				<tr>
+					<td valign="top" align="right">Freight per shipment:</td>
+				</tr>
+				
+			</table>
+			</td>
+			<td align="right">
+			<table>
+								<tr>
+					<td valign="top" align="right">$398.00</td>
+				</tr>
+
+				<tr>
+					<td valign="top" align="right">$69.99</td>
+				</tr>
+							</table>
+			</td>
+			</tr>
+	
+
+		</table>
+				        		<BR>
+<!--content end-->
+<!--//*************************************************************-->
+		<table border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td style="padding:0 12px 0 12px;">
+				<div align="justify" class="small">
+			
+			  If you need assistance regarding your order, please contact one of our Customer Care Representatives at (800) 408-8353 or go to <a href="http://avnetexpress.avnet.com/store/em/OnlineHelpView?langId=-1&amp;storeId=500201&amp;catalogId=500201" target="_blank">On-line Help</a>.
+					    	<br><br>
+		    	<Strong><span style="color:#990000">Thank you for choosing Avnet.</span></strong><br><br>
+				<a href="http://www.avnet.com/legal/termsandcondition" target="_blank">Terms and Conditions governing your web order.</a>
+		    	<BR><BR>We received your order on Wednesday, March 5, 2014 3:55 AM Pacific Time										</div>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+<br><br>
+</BODY>
+</HTML>
